@@ -8,8 +8,8 @@
 
   # the build target executable:
 
-   #TARGET = hash_table/double_hashing_technique
-	TARGET = hello
+	TARGET = set_bits_in_array
+	#TARGET = reverse_bit
 	
   all: $(TARGET).c
 	$(CC) $(CFLAGS) -o exe $(TARGET).c

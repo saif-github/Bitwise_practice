@@ -1,0 +1,9 @@
+eclipse.preferences.version=1
+environment/project/0.1059504506/MINGW_HOME/delimiter=;
+environment/project/0.1059504506/MINGW_HOME/operation=append
+environment/project/0.1059504506/MINGW_HOME/value=C\:\\MinGW
+environment/project/0.1059504506/PATH/delimiter=;
+environment/project/0.1059504506/PATH/operation=replace
+environment/project/0.1059504506/PATH/value=C\:\\MinGW\\bin;C\:\\MinGW\\msys\\1.0\\bin
+environment/project/0.1059504506/append=true
+environment/project/0.1059504506/appendContributed=true
