@@ -4,6 +4,7 @@
  *  Created on: Apr 7, 2020
  *      Author: 7325588
  */
+
 /*
  * The idea is to generate a look up for first 256 numbers (one byte), and break every element of array at byte boundary.
  * A meta program using C/C++ preprocessor generates the look up table for counting set bits in a byte.
