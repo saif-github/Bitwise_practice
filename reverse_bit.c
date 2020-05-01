@@ -31,5 +31,37 @@ int main()
     getchar();
 }
 
+/*
+suppose 8 bit num
 
+num = 0001 0101   ans = 1010 1000
+rev_num = num
+
+rev_num = 0001 0101 << 1
+
+rev_num = 001 01010 | (num & 1)
+rev_num = 001 01011
+num = 0000 1010
+
+rev_num = 0101 0110
+rev_num = 0101 0110 | (num & 1)
+rev_num = 0101 0110
+num = 0000 0101
+
+rev_num = 1010 1100
+rev_num = 1010 1100 | (num & 1)
+rev_num = 1010 1101
+num = 0000 0010
+
+rev_num = 0101 1010
+rev_num = 0101 1010 | (num & 1)
+rev_num = 0101 1010
+num = 0000 0001
+
+rev_num = 1011 0101
+num = 0000 0000
+
+rev_num = 1010 1000
+
+*/
 
