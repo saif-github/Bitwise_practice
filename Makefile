@@ -8,8 +8,9 @@
 
   # the build target executable:
 
-	TARGET = set_bits_in_array
+	#TARGET = set_bits_in_array
 	#TARGET = reverse_bit
+	TARGET = duplicates_of_array
 	
   all: $(TARGET).c
 	$(CC) $(CFLAGS) -o exe $(TARGET).c
