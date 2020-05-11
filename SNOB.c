@@ -20,8 +20,10 @@ Part 1:  00011100 - Right Most Bit Pattern
 Part 2:
 10000000 - left part of x, excluding right most 1's pattern ------> [C]
 
+Part 3 :
 10100000 - add B and C (OR operation) ------> [D]
 
+Part 4 :
 10100011 - add A and D which is required number 163
 
 
@@ -42,29 +44,28 @@ unsigned int snoob(unsigned int  x)
   unsigned int next = 0; 
   
   if(x) 
-  { 
-  
+  {
     // right most set bit 
     rightOne = x & -(signed)x; 
   
     // reset the pattern and set next higher bit 
     // left part of x will be here 
-    nextHigherOneBit = x + rightOne; 
+    nextHigherOneBit = x + rightOne; //........part [D]
   
     // nextHigherOneBit is now part [D] of the above explanation. 
   
-    // isolate the pattern 
+    // isolate the pattern
     rightOnesPattern = x ^ nextHigherOneBit; 
   
     // right adjust pattern 
     rightOnesPattern = (rightOnesPattern)/rightOne; 
   
     // correction factor 
-    rightOnesPattern >>= 2; 
+    rightOnesPattern >>= 2;	   //.........part [A]
   
     // rightOnesPattern is now part [A] of the above explanation. 
   
-    // integrate new pattern (Add [D] and [A]) 
+    // integrate new pattern (Add [D] and [A])  
     next = nextHigherOneBit | rightOnesPattern; 
   } 
   
