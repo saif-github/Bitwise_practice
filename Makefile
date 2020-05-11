@@ -10,7 +10,8 @@
 
 	#TARGET = set_bits_in_array
 	#TARGET = reverse_bit
-	TARGET = duplicates_of_array
+	#TARGET = duplicates_of_array
+	TARGET = SNOB
 	
   all: $(TARGET).c
 	$(CC) $(CFLAGS) -o exe $(TARGET).c
