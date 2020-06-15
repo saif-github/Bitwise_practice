@@ -12,7 +12,8 @@
 	#TARGET = reverse_bit
 	#TARGET = duplicates_of_array
 	#TARGET = SNOB
-	TARGET = parity_lookuptable
+	#TARGET = parity_lookuptable
+	TARGET = m_into_n
 	
   all: $(TARGET).c
 	$(CC) $(CFLAGS) -o exe $(TARGET).c
